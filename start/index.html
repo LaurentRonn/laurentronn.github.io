@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Start</title>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe/dist/aframe-master.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://rawgit.com/protyze/aframe-curve-component/master/dist/aframe-curve-component.min.js"></script>
+    <script src="https://rawgit.com/protyze/aframe-alongpath-component/master/dist/aframe-alongpath-component.min.js"></script>
+    <!-- script src="./assets/aframe-inspector.js"></script-->
+
+  </head>
+  <body>
+
+    <a-scene background="color: #fff">
+  <a-assets>
+    <img id="mozvr" src="./assets/mozvr.png">
+    <img id="shadow2" src="./assets/radial-shadow.png">
+    <img id="ui1" src="./assets/field.jpg">
+    <img id="ui2" src="./assets/IceMando.jpg">
+    <img id="ui3" src="./assets/xwings.jpg">
+    <img id="skyTexture" src="./assets/stars.png">
+    <img id="title" src="./assets/Star waRS.png">
+  </a-assets>
+
+<a-sound src="./assets/Last Sunset.mp3" autoplay="true" position="0 3.67097 0" sound="loop: true" id="updateMe"></a-sound>
+<a-sky id="background" src="#skyTexture" radius="500"></a-sky>
+
+  <a-curvedimage src="#ui3" radius="5.7" theta-length="180" height="9" rotation="0 90 0" scale="1.2 1.2 1.2" material="" geometry="height: 4; thetaLength: 180" position="0 3 0"></a-curvedimage>
+
+  <a-image src="#title" width="3" height="1.5" material="" geometry="height: 0.36" scale="5 5 5" position="0 15 -10"></a-image>
+
+  <a-curvedimage src="#mozvr" radius="5.7" theta-length="17" height=".36"
+                 opacity="0.2" rotation="0 250 0" position="0 2 0"></a-curvedimage>
+
+  <a-curvedimage src="#ui1" radius="5.7" theta-length="72" height="2.6" rotation="0 55 0" position="0 0.7 6" scale="" material="" geometry="thetaLength: 72"></a-curvedimage>
+
+ <a-curvedimage src="#ui2" radius="5.7" theta-length="70" height="3.02" rotation="0 -90 0" scale="3 3 3" material="" geometry="radius: 8; thetaLength: 40" position="7 4 2"></a-curvedimage>
+
+  <a-image position="" src="#shadow2" rotation="-90 0 0" scale="30 30 30" material="" geometry="" id="floor"></a-image>
+
+  <a-curve id="track1">
+<a-curve-point id="start" position="0 10 20" rotation="0 180 0"></a-curve-point>
+<a-curve-point id="middle" position="0 -1 0"></a-curve-point>
+<a-curve-point id="end" position="15 15 -6"></a-curve-point>
+    </a-curve>
+
+    <!--a-draw-curve curveref="#track1" material="shader: line; color: red;"></a-draw-curve-->
+
+
+  <a-entity id="cameraRig" alongpath="curve: #track1; dur: 72000; loop: true">
+          <!-- camera -->
+          <a-entity id="head" camera="" rotation="" look-controls="" wasd-controls=""></a-entity>
+
+<!-- teleport hand controls -->
+      <!--a-entity id="right-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head; collisionEntities: floor" daydream-controls="" ></a-entity-->
+
+</a-scene>
+
+
+  </body>
+</html>
