@@ -1,132 +1,227 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>[L+1] Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<title>LaurentRonnHomepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./assets/css/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>[L+1]</strong> <span>by Laurent Rönn</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./assets/images/UnityArchitectureWIP02.jpg");
+  min-height: 100%;
+}
 
-					<!-- Menu -->
-						<nav id="menu">
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="About.html">About</a></li>
-								<li><a href="Projects.html">XR-Projects</a></li>
-								<li><a href="wip.html">Machine Learning</a></li>
-								<li><a href="wip.html">Designs</a></li>
-							</ul>
-						</nav>
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<span class="image">
-								<img src="images/Banner01.png" alt="" />
-							</span>
-							<header class="major">
-								<h1>[L]+1</h1>
-							</header>
-							<div class="content">
-								<p>Welcome! This is definitely where you parked your car.<br />
-								And also where the magic happens.</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Take a look inside</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LaurentRonn.github.io</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+        <a href="#work" class="w3-bar-item w3-button"> WORK</a>
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#skillset" class="w3-bar-item w3-button"> SKILLSET</a>
+      <a href="#contact" class="w3-bar-item w3-button"> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-				<!-- Main -->
-					<div id="main">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/UnityArchitectureWIP02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="About.html" class="link">About me</a></h3>
-										<p>I do weird stuff</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/MinasTirith01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="Projects.html" class="link">XR-Projects</a></h3>
-										<p>A sweet collection of VR/AR projects <br /> designed by me</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/UnityMLAgentCrawler01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="wip.html" class="link">Machine Learning</a></h3>
-										<p>Queeping a watchfull eye <br /> on Skynet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/Sketch01.png" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="wip.html" class="link">Designs</a></h3>
-										<p>But does it still float?</p>
-									</header>
-								</article>
-							</section>
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#skillset" onclick="w3_close()" class="w3-bar-item w3-button">SKILLSET</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Contact: Laurent.ronn@gmail.com</h2>
-									</header>
-									<p>I'm always on the look-out for new interesting projects. If you liked what you see here, feel free to contact me. </p>
-									<ul class="actions">
-										<li><a href="index.html" class="button">Get in touch</a></li>
-									</ul>
-								</div>
-							</section>
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Solving hard problems with simple solutions.</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Solving hard problems with simple solutions.</span><br>
+    <span class="w3-large">Welcome!<br>
+        Feel free to browse around.<br>
+        If there is anything you wonder, or feedback you'd like to leave,<br>
+        You're welcome to contact me at Laurentronn@gmail.com</span>
 
-					</div>
+    <p><a href="#about" class="w3-button w3-round-large w3-blue w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-70%">Enter</a></p>
+    <p class="w3-text-blue"><a href="https://www.linkedin.com/in/laurent-r%C3%B6nn/">my Linkedin</a></p>
+    <p class="w3-text-blue"><a href="https://github.com/LaurentRonn">my Github</a></p>
+    <p class="w3-text-blue"><a href="https://www.dotabuff.com/players/167376474">my Dotabuff</a></p>
+ 
+  </div> 
+  
+</header>
+    
+    <!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Project Gallery</h3>
+  <p class="w3-center w3-large">Showcasing some of my projects</p>
+    
+  <div class="w3-row-padding">
+      
+    <div class="w3-container" style="padding:32px 16px">
+      <div class="w3-container" style="padding:16px 16px" id="project01">
+          <h3 class="w3-center">Project 01 Title</h3>
+          <div class="w3-content" style="max-width:800px">
+            <a href="tryw3css_templates_band.htm" target="_blank" title="press to view">
+              <img  class="w3-center w3-round-large" src="./assets/images/UnityArchitectureWIP03.jpg" style="width:100%;margin:20px 0" alt="project01">
+            </a>
+            <br>
 
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<ul class="copyright">
-							<li>&copy; Laurent Rönn</li><li>Design inspired by: <a >HTML5 UP</a></li>
-						</ul>
-					</div>
-				</footer>
+            <div class="w3-row">
+              <div class="w3-col m6" style="padding:16px">
+                <a href="tryw3css_templates_blog.htm" target="_blank" class="w3-button w3-round-large w3-padding-large w3-dark-grey" style="width:98.5%">Demo</a>
+              </div>
+              <div class="w3-col m6" style="padding:16px">
+                <a href="w3css_templates.asp" class="w3-button w3-round-large w3-padding-large w3-dark-grey" style="width:98.5%">About »</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <div class="w3-container" style="padding:32px 16px">
+      <div class="w3-container" style="padding:16px 16px" id="project02">
+          <h3 class="w3-center">Project 02 Title</h3>
+          <div class="w3-content" style="max-width:800px">
+            <a href="tryw3css_templates_band.htm" target="_blank" title="press to view">
+              <img class="w3-center w3-round-large" src="./assets/images/UnityArchitectureWIP.jpg" style="width:100%;margin:20px 0" alt="project02">
+            </a>
+            <br>
 
-			</div>
+            <div class="w3-row">
+              <div class="w3-col m6" style="padding:16px">
+                <a href="tryw3css_templates_blog.htm" target="_blank" class="w3-button w3-round-large w3-padding-large w3-dark-grey" style="width:98.5%">Demo</a>
+              </div>
+              <div class="w3-col m6" style="padding:16px">
+                <a href="w3css_templates.asp" class="w3-button w3-round-large w3-padding-large w3-dark-grey" style="width:98.5%">About »</a>
+              </div>
+            </div>
+              
+          </div>
+        </div>
+    </div>
+      
+    </div>
+</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!-- About Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT ME:</h3>
+  <p class="w3-center w3-large">I'm a XR-designer/developer/engineer</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Coding</p>
+      <p>I use computers to do cool stuff. That requires giving the machine orders. Cool people call it "coding". I call it "Why is nothing ever working?!"</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Eat VR.<br>
+          Live VR.<br>
+          Pray VR.<br>
+          Death to all flatscreeners out there.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>What can i say? I'm  a sucker for good design, solid engineering, and dedicated to quality control.<br> Do it well, or don't do it at all.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Being a one man army is cool but honestly stupid.<br>It is only through other peoples hard work and dedication in the fields of art and design,<br>
+          engineering, information and computer science that I can do what I do today.<br>
+          Thank you all for giving us a brave new world every day.</p>
+    </div>
+  </div>
+</div>
 
-	</body>
+<!-- Promo Section - "My Skillset" -->
+<div class="w3-container " style="padding:128px 16px" id="skillset">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+        <h3>My skillset:</h3>
+        <p>I have a background in Mechanical engineering and product design.<br>
+            My workflow focuses on technical tools to design experiences for Virtual reality.<br>
+            This includes the integration of many API and I feel flexible working with different pipelines.</p>
+        <p>My goal is to reach 100% mastery. I'm very open to working on projects within these fields.</p>
+        <p>If there's anything you might need, feel free to contact me.</p>
+        
+        <p class="w3-wide">Unity 3D development and external API integration.</p>
+      <div class="w3-grey w3-round-large">
+        <div class="w3-container w3-round-large w3-dark-grey w3-center" style="width:80%">80%</div>
+      </div>
+      <p class="w3-wide">WebDesign + Coding - includes A-frame, AR.js, HTML5, Matlab, Tensorflow, C#. </p>
+      <div class="w3-grey w3-round-large">
+        <div class="w3-container w3-round-large w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+      <p class="w3-wide">3D Modelling - includes Blender 3D, Maya, SketchUp, Solidworks</p>
+      <div class="w3-grey w3-round-large">
+        <div class="w3-container w3-round-large w3-dark-grey w3-center" style="width:60%">60%</div>
+        </div></div>
+      <div class="w3-col m6" style="padding: 16px">
+      <img class="w3-image w3-round-large" src="./assets/images/UnityArchitectureWIP01.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+    
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="contact">
+  <h1 class="w3-center">Contact:</h1>
+  <p class="w3-center w3-large">Please e-mail me if you have any request</p>
+    <h1 class="w3-center">Email: laurentronn@gmail.com</h1>    
+  </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-32">
+  <a href="#home" class="w3-button w3-round-large w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back Top</a>
+    <p class="w3-center">Design by Laurent Rönn</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-blue">w3.css</a></p>
+    
+</footer>
+ 
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
 </html>
