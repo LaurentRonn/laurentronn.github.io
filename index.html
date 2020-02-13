@@ -15,35 +15,12 @@ body, html {
 }
 
 /* Full height image header with slide*/
-.bgslide {
-    width:100%;
-    height: 100vh;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    backface-visibility: hidden;
-    animation: bgslide 20s linear infinite 0s;
-    animation-timing-function: ease-in;
-    background-image: url("./assets/images/BlenderGISGamlaStan03.jpg");
-
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./assets/images/BlenderGISGamlaStan03.jpg");
+  min-height: 100%;
 }
-    @keyframes bgslide{
-        0% {
-            background-image: url("./assets/images/UnityMLAgentCrawler01.jpg")
-        }
-         25% {
-            background-image: url("./assets/images/OctaneIcon.jpg")
-        }
-         50% {
-            background-image: url("./assets/images/Background_Planet_Blue.jpg")
-        }
-         75% {
-            background-image: url("./assets/images/BlenderGISGamlaStan03.png")
-        }
-         100% {
-            background-image: url("./assets/images/MinasTirith01.jpg")
-        }
-    }
 .w3-bar .w3-button {
   padding: 16px;
 }
@@ -79,10 +56,10 @@ body, html {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgslide w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
     
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Welcome to my homepage!</span><br>
+  <div class="w3-display-left w3-text-white" style="padding:48px;font-size: 15px;line-height: 24px;letter-spacing: 0.2em;font-weight: 500;">
+    <span class="w3-jumbo w3-hide-small" style="font-weight: 700;letter-spacing: 1px;line-height: 70px;">Welcome to my homepage!</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium" style="padding:64px 16px">Solving hard problems with simple solutions.</span><br>
     <span class="w3-large">Feel free to browse around.<br>
         If there is anything you wonder, or feedback you'd like to leave,<br>
