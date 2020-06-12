@@ -72,12 +72,12 @@ input, select, textarea {
 
 /* Basic */
 
-	@-ms-viewport {
+	@viewport {
 		width: device-width;
 	}
 
 	body {
-		-ms-overflow-style: scrollbar;
+		overflow-style: scrollbar;
 	}
 
 	@media screen and (max-width: 480px) {
@@ -1797,8 +1797,6 @@ input, select, textarea {
 	}
 
 		.icon:before {
-			font-smoothing: grayscale;
-			font-smoothing: antialiased;
 			display: inline-block;
 			font-style: normal;
 			font-variant: normal;
@@ -2136,11 +2134,11 @@ input, select, textarea {
 			background: #ffffff;
 		}
 
-		select:focus::-ms-value {
+		select:focus {
 			background-color: transparent;
 		}
 
-		select::-ms-expand {
+		select:expand {
 			display: none;
 		}
 
@@ -2182,8 +2180,6 @@ input, select, textarea {
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				font-smoothing: grayscale;
-				font-smoothing: antialiased;
 				display: inline-block;
 				font-style: normal;
 				font-variant: normal;
