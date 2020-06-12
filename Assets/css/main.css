@@ -53,7 +53,7 @@ table {
 }
 
 body {
-	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 }
 
 mark {
@@ -61,15 +61,12 @@ mark {
 	color: inherit;
 }
 
-input::-moz-focus-inner {
+input: inner {
 	border: 0;
 	padding: 0;
 }
 
 input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
 	appearance: none;
 }
 
@@ -104,13 +101,7 @@ input, select, textarea {
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
 			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
 			transition: none !important;
 		}
 
@@ -141,9 +132,6 @@ input, select, textarea {
 		}
 
 	a {
-		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #585858;
@@ -279,7 +267,7 @@ input, select, textarea {
 	}
 
 	pre {
-		-webkit-overflow-scrolling: touch;
+		overflow: scroll;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
@@ -1809,8 +1797,8 @@ input, select, textarea {
 	}
 
 		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
+			font-smoothing: grayscale;
+			font-smoothing: antialiased;
 			display: inline-block;
 			font-style: normal;
 			font-variant: normal;
@@ -1838,9 +1826,6 @@ input, select, textarea {
 		}
 
 		.icon.style2 {
-			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			background-color: transparent;
 			border: solid 1px #c9c9c9;
@@ -1920,9 +1905,6 @@ input, select, textarea {
 /* Actions */
 
 	ul.actions {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
 		cursor: default;
 		list-style: none;
@@ -1936,9 +1918,6 @@ input, select, textarea {
 		}
 
 		ul.actions.special {
-			-moz-justify-content: center;
-			-webkit-justify-content: center;
-			-ms-justify-content: center;
 			justify-content: center;
 			width: 100%;
 			margin-left: 0;
@@ -1949,9 +1928,6 @@ input, select, textarea {
 			}
 
 		ul.actions.stacked {
-			-moz-flex-direction: column;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
 			flex-direction: column;
 			margin-left: 0;
 		}
@@ -1969,13 +1945,7 @@ input, select, textarea {
 		}
 
 			ul.actions.fit li {
-				-moz-flex-grow: 1;
-				-webkit-flex-grow: 1;
-				-ms-flex-grow: 1;
 				flex-grow: 1;
-				-moz-flex-shrink: 1;
-				-webkit-flex-shrink: 1;
-				-ms-flex-shrink: 1;
 				flex-shrink: 1;
 				width: 100%;
 			}
@@ -1991,22 +1961,13 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			ul.actions:not(.fixed) {
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
 				flex-direction: column;
 				margin-left: 0;
 				width: 100% !important;
 			}
 
 				ul.actions:not(.fixed) li {
-					-moz-flex-grow: 1;
-					-webkit-flex-grow: 1;
-					-ms-flex-grow: 1;
 					flex-grow: 1;
-					-moz-flex-shrink: 1;
-					-webkit-flex-shrink: 1;
-					-ms-flex-shrink: 1;
 					flex-shrink: 1;
 					padding: 1em 0 0 0;
 					text-align: center;
@@ -2065,26 +2026,14 @@ input, select, textarea {
 		}
 
 		form > .fields {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
 			display: flex;
-			-moz-flex-wrap: wrap;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
 			width: calc(100% + 3em);
 			margin: -1.5em 0 2em -1.5em;
 		}
 
 			form > .fields > .field {
-				-moz-flex-grow: 0;
-				-webkit-flex-grow: 0;
-				-ms-flex-grow: 0;
 				flex-grow: 0;
-				-moz-flex-shrink: 0;
-				-webkit-flex-shrink: 0;
-				-ms-flex-shrink: 0;
 				flex-shrink: 0;
 				padding: 1.5em 0 0 1.5em;
 				width: calc(100% - 1.5em);
@@ -2141,9 +2090,6 @@ input, select, textarea {
 	input[type="tel"],
 	select,
 	textarea {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
 		appearance: none;
 		background-color: transparent;
 		border: none;
@@ -2212,9 +2158,6 @@ input, select, textarea {
 
 	input[type="checkbox"],
 	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
 		appearance: none;
 		display: block;
 		float: left;
@@ -2239,8 +2182,8 @@ input, select, textarea {
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
+				font-smoothing: grayscale;
+				font-smoothing: antialiased;
 				display: inline-block;
 				font-style: normal;
 				font-variant: normal;
@@ -2375,7 +2318,7 @@ input, select, textarea {
 /* Table */
 
 	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
+        overflow: scroll;
 		overflow-x: auto;
 	}
 
@@ -2446,13 +2389,7 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 4px;
@@ -2566,22 +2503,13 @@ input, select, textarea {
 /* Tiles */
 
 	.tiles {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
 		.tiles article {
-			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
 			width: calc(33.33333% - 2.5em);
@@ -2589,9 +2517,6 @@ input, select, textarea {
 		}
 
 			.tiles article > .image {
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				position: relative;
 				display: block;
@@ -2607,9 +2532,6 @@ input, select, textarea {
 
 				.tiles article > .image:before {
 					pointer-events: none;
-					-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
-					-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
 					transition: background-color 0.5s ease, opacity 0.5s ease;
 					content: '';
 					display: block;
@@ -2625,9 +2547,6 @@ input, select, textarea {
 
 				.tiles article > .image:after {
 					pointer-events: none;
-					-moz-transition: opacity 0.5s ease;
-					-webkit-transition: opacity 0.5s ease;
-					-ms-transition: opacity 0.5s ease;
 					transition: opacity 0.5s ease;
 					content: '';
 					display: block;
@@ -2645,25 +2564,10 @@ input, select, textarea {
 				}
 
 			.tiles article > a {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
 				display: flex;
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
 				flex-direction: column;
-				-moz-align-items: center;
-				-webkit-align-items: center;
-				-ms-align-items: center;
 				align-items: center;
-				-moz-justify-content: center;
-				-webkit-justify-content: center;
-				-ms-justify-content: center;
 				justify-content: center;
-				-moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
-				-webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
-				-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
 				transition: background-color 0.5s ease, transform 0.5s ease;
 				position: absolute;
 				top: 0;
@@ -2692,9 +2596,6 @@ input, select, textarea {
 				}
 
 				.tiles article > a .content {
-					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
 					transition: max-height 0.5s ease, opacity 0.5s ease;
 					width: 100%;
 					max-height: 0;
@@ -2732,9 +2633,6 @@ input, select, textarea {
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
-				-moz-transform: scale(1.1);
-				-webkit-transform: scale(1.1);
-				-ms-transform: scale(1.1);
 				transform: scale(1.1);
 			}
 
@@ -2757,9 +2655,6 @@ input, select, textarea {
 		}
 
 		body.is-preload .tiles article {
-			-moz-transform: scale(0.9);
-			-webkit-transform: scale(0.9);
-			-ms-transform: scale(0.9);
 			transform: scale(0.9);
 			opacity: 0;
 		}
@@ -2807,9 +2702,6 @@ input, select, textarea {
 				}
 
 					.tiles article:hover > .image {
-						-moz-transform: scale(1.0);
-						-webkit-transform: scale(1.0);
-						-ms-transform: scale(1.0);
 						transform: scale(1.0);
 					}
 
@@ -2869,13 +2761,7 @@ input, select, textarea {
 		}
 
 			#header nav ul {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
 				display: flex;
-				-moz-align-items: center;
-				-webkit-align-items: center;
-				-ms-align-items: center;
 				align-items: center;
 				list-style: none;
 				margin: 0;
@@ -2903,7 +2789,7 @@ input, select, textarea {
 					}
 
 					#header nav ul li a[href="#menu"] {
-						-webkit-tap-highlight-color: transparent;
+						color: transparent;
 						width: 4em;
 						text-indent: 4em;
 						font-size: 1em;
@@ -2913,9 +2799,6 @@ input, select, textarea {
 					}
 
 						#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
-							-moz-transition: opacity 0.2s ease;
-							-webkit-transition: opacity 0.2s ease;
-							-ms-transition: opacity 0.2s ease;
 							transition: opacity 0.2s ease;
 							content: '';
 							display: block;
@@ -2967,21 +2850,12 @@ input, select, textarea {
 /* Menu */
 
 	#wrapper {
-		-moz-transition: opacity 0.45s ease;
-		-webkit-transition: opacity 0.45s ease;
-		-ms-transition: opacity 0.45s ease;
 		transition: opacity 0.45s ease;
 		opacity: 1;
 	}
 
 	#menu {
-		-moz-transform: translateX(18em);
-		-webkit-transform: translateX(18em);
-		-ms-transform: translateX(18em);
 		transform: translateX(18em);
-		-moz-transition: -moz-transform 0.45s ease, visibility 0.45s;
-		-webkit-transition: -webkit-transform 0.45s ease, visibility 0.45s;
-		-ms-transition: -ms-transform 0.45s ease, visibility 0.45s;
 		transition: transform 0.45s ease, visibility 0.45s;
 		position: fixed;
 		top: 0;
@@ -2989,7 +2863,7 @@ input, select, textarea {
 		width: 18em;
 		max-width: 80%;
 		height: 100%;
-		-webkit-overflow-scrolling: touch;
+		overflow:scroll;
 		background:  #ffe6cc;
 		color:  #404040;
 		cursor: default;
@@ -2998,11 +2872,8 @@ input, select, textarea {
 	}
 
 		#menu > .inner {
-			-moz-transition: opacity 0.45s ease;
-			-webkit-transition: opacity 0.45s ease;
-			-ms-transition: opacity 0.45s ease;
 			transition: opacity 0.45s ease;
-			-webkit-overflow-scrolling: touch;
+			overflow: scroll;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -3038,15 +2909,9 @@ input, select, textarea {
 					}
 
 		#menu > .close {
-			-moz-transition: opacity 0.45s ease, -moz-transform 0.45s ease;
-			-webkit-transition: opacity 0.45s ease, -webkit-transform 0.45s ease;
-			-ms-transition: opacity 0.45s ease, -ms-transform 0.45s ease;
 			transition: opacity 0.45s ease, transform 0.45s ease;
-			-moz-transform: scale(0.25) rotate(180deg);
-			-webkit-transform: scale(0.25) rotate(180deg);
-			-ms-transform: scale(0.25) rotate(180deg);
 			transform: scale(0.25) rotate(180deg);
-			-webkit-tap-highlight-color: transparent;
+			color: transparent;
 			display: block;
 			position: absolute;
 			top: 2em;
@@ -3063,9 +2928,6 @@ input, select, textarea {
 		}
 
 			#menu > .close:before, #menu > .close:after {
-				-moz-transition: opacity 0.2s ease;
-				-webkit-transition: opacity 0.2s ease;
-				-ms-transition: opacity 0.2s ease;
 				transition: opacity 0.2s ease;
 				content: '';
 				display: block;
@@ -3100,9 +2962,6 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#menu {
-				-moz-transform: translateX(16.5em);
-				-webkit-transform: translateX(16.5em);
-				-ms-transform: translateX(16.5em);
 				transform: translateX(16.5em);
 				width: 16.5em;
 			}
@@ -3131,9 +2990,6 @@ input, select, textarea {
 	}
 
 	body.is-menu-visible #menu {
-		-moz-transform: translateX(0);
-		-webkit-transform: translateX(0);
-		-ms-transform: translateX(0);
 		transform: translateX(0);
 		visibility: visible;
 	}
@@ -3143,9 +2999,6 @@ input, select, textarea {
 		}
 
 		body.is-menu-visible #menu .close {
-			-moz-transform: scale(1.0) rotate(0deg);
-			-webkit-transform: scale(1.0) rotate(0deg);
-			-ms-transform: scale(1.0) rotate(0deg);
 			transform: scale(1.0) rotate(0deg);
 			opacity: 1;
 		}
@@ -3172,17 +3025,8 @@ input, select, textarea {
 	}
 
 		#footer > .inner {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
 			display: flex;
-			-moz-flex-wrap: wrap;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
-			-moz-flex-direction: row;
-			-webkit-flex-direction: row;
-			-ms-flex-direction: row;
 			flex-direction: row;
 		}
 
@@ -3266,9 +3110,6 @@ input, select, textarea {
 			}
 
 				#footer > .inner {
-					-moz-flex-direction: column;
-					-webkit-flex-direction: column;
-					-ms-flex-direction: column;
 					flex-direction: column;
 				}
 
@@ -3279,9 +3120,6 @@ input, select, textarea {
 					}
 
 					#footer > .inner section:nth-child(2) {
-						-moz-order: -1;
-						-webkit-order: -1;
-						-ms-order: -1;
 						order: -1;
 						width: 100%;
 						margin-left: 0;
