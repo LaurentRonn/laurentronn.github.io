@@ -17,35 +17,50 @@
             
             <!-- Header -->
             <header id="header">
+                
                 <div class="inner">
                     
-                    <!-- Logo -->
-                    <a href="index.html" class="logo">
-                        <span class="title">Projects by Laurent Rönn</span>
-                    </a>
+                   <div class="topnav" id="myTopnav">
+                       <a href="index.html" class="active" style="padding-left: 0px;">Home</a>
+                       
+                      
+                       <a href="WEBXR.html">WEBXR</a>
+                       <a href="Unity3D.html">Unity3D</a>
+                       
+                        <a href="Blog.html">Blog</a>
+                       <a href="landing.html">About</a>
+                       
+                       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                           <i class="fa fa-bars"></i>
+                       </a>
+                    </div>
                     
-                    <!-- Nav -->
-                    <nav>
-                        <ul>
-                            <li><a href="#menu">Menu</a></li>
-                        </ul>
-                    </nav>
                 </div>
+                
+                
             </header>
             
             <!-- Main -->
             <div id="main">
                 <div class="inner">
-                    
                     <!-- Introduction -->
                     <header>
+                        
+                        <!-- Logo -->
+                    <a href="index.html" class="logo" style="color: darkgray">
+                        <span class="title">Projects by Laurent Rönn</span>
+                    </a>
+                        
+                        
                         <h1>Welcome!</h1>
+                        
                         <h2 style="color: whitesmoke">This is definitely where you parked your car. And also where the magic happens.</h2>
                         <p style="color: whitesmoke">This is a collection showcasing some of the projects I'm working on.</p>
                     </header>
                     
                     <!-- Project Tiles -->
-                    <div class="inner">
+                    
+                    <div class="inner" style="padding-top: 3em;">
                     
                         <section class="tiles">
                                 
@@ -134,6 +149,18 @@
 			</div>
 
 		<!-- Scripts -->
+        
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        
 			<script src="Assets/js/jquery.min.js"></script>
 			<script src="Assets/js/browser.min.js"></script>
 			<script src="Assets/js/breakpoints.min.js"></script>
