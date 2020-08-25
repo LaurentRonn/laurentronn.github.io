@@ -1,171 +1,250 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>LR Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="Assets/css/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<noscript><link rel="stylesheet" href="Assets/css/noscript.css"></noscript>
-	</head>
-    
-    <!-- Page Body -->
-    <body class="is-preload" style="background-image: url(images/Background_Planet_Blue.jpg)">
-        
-        <!-- Wrapper -->
-        <div id="wrapper">
-            
-            <!-- Header -->
-            <header id="header">
-                
-                <div class="inner">
-                    
-                   <div class="topnav" id="myTopnav">
-                       <a href="index.html" class="active" style="padding-left: 0px;">Home</a>
-                       
-                      
-                       <a href="WEBXR.html">WEBXR</a>
-                       <a href="Unity3D.html">Unity3D</a>
-                       
-                        <a href="Blog.html">Blog</a>
-                       <a href="landing.html">About</a>
-                       
-                       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                           <i class="fa fa-bars"></i>
-                       </a>
-                    </div>
-                    
-                </div>
-                
-                
-            </header>
-            
-            <!-- Main -->
-            <div id="main">
-                <div class="inner">
-                    <!-- Introduction -->
-                    <header>
-                        
-                        <!-- Logo -->
-                    <a href="index.html" class="logo" style="color: darkgray">
-                        <span class="title">Projects by Laurent Rönn</span>
-                    </a>
-                        
-                        
-                        <h1>Welcome!</h1>
-                        
-                        <h2 style="color: whitesmoke">This is definitely where you parked your car. And also where the magic happens.</h2>
-                        <p style="color: whitesmoke">This is a collection showcasing some of the projects I'm working on.</p>
-                    </header>
-                    
-                    <!-- Project Tiles -->
-                    
-                    <div class="inner" style="padding-top: 3em;">
-                    
-                        <section class="tiles">
-                                
-                                <!-- Tile 01 -->
-								<article class="style6">
-									<span class="image">
-										<img src="images/StarWars.gif">
-									</span>
-									<a href="WEBXR.html">
-										<h2>Made with WEBXR</h2>
-										<div class="content">
-											<p>WebXR samples built with the A-frame javascript library</p>
-										</div>
-									</a>
-								</article>
-                                
-                                <!-- Tile 02 -->
-								<article class="style1">
-									<span class="image">
-										<img src="images/UnityShaders01.gif">
-									</span>
-									<a href="Unity3D.html">
-										<h2>Made With Unity 3D</h2>
-										<div class="content">
-											<p>XR projects built with Unity</p>
-                                        </div>
-									</a>
-								</article>
-                                
-                                <!-- Tile 03 -->
-								<article class="style3">
-									<span class="image">
-										<img src="images/UnityMLAgentCrawler02.jpg">
-									</span>
-									<a href="landing.html">
-										<h2>Artificial Intelligence and Machine Learning</h2>
-										<div class="content">
-											<p>Experiments with machine learning and AI. Built using Tensorflow, Unity3D, and Javascript libraries. (Page and demos coming Soon)</p>
-                                        </div>
-									</a>
-								</article>
-                                
-                                <!-- Tile 04 -->
-								<article class="style2">
-									<span class="image">
-										<img src="images/UnityZombieShooter02.gif">
-									</span>
-									<a href="landing.html">
-										<h2>About Me</h2>
-										<div class="content">
-											<p>I build stuff for VR</p>
-										</div>
-									</a>
-								</article>
-                                
-                                <!-- Tile 05 -->
-                                <article class="style5">
-									<span class="image">
-										<img src="images/UnityiTweenLocomotion.gif">
-									</span>
-									<a href="Blog.html">
-										<h2>Development Blog</h2>
-										<div class="content">
-											<p>Blog on my development (and failures) with Unity3D</p>
-                                        </div>
-									</a>
-								</article>
-                                
-							</section>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <!-- Footer -->
-            <footer id="footer">
-						<div class="inner" >
-							<ul style="text-align:center" class="copyright">
-                                <h2 style="text-align:center">contact: Laurent.ronn@gmail.com</h2>
-								<li>&copy; Laurent Rönn. All rights reserved</li><li>Original page design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+<!DOCTYPE html>
+<html lang="zxx">
 
+<head>
+  <meta charset="utf-8">
+  <title>Laurent Rönn Portfolio</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./plugins/counto/animate.css">
+  <link rel="stylesheet" href="./plugins/aos/aos.css">
+  <link rel="stylesheet" href="./plugins/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./plugins/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./plugins/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="./plugins/animated-text/animated-text.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  
+<!-- Navigation Start -->
+<!-- Header Start --> 
+
+<nav class="navbar navbar-expand-lg  main-nav " style="padding-top: 60px" id="navbar">
+
+	<div class="container">
+	  <a class="navbar-brand" href="index.html">
+          <h1>Laurent Rönn</h1>
+	  </a>
+
+	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="ti-align-justify"></span>
+	  </button>
+  
+		  <div class="collapse navbar-collapse" id="navbarsExample09">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item  active"><a class="nav-link" href="index.html">Home</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="index.html">Portfolio</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="index.html">Blog</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="index.html">Contact</a></li>
+           
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Header Close --> 
+
+
+<!-- Navigation ENd -->
+
+<!-- Banner Start -->
+<section class="section banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10">
+				 <h2 class="cd-headline clip is-full-width mb-4 ">
+                     Welcome! <br>
+				 	I design and create <br>
+                    <span class="cd-words-wrapper text-color">
+                        <b class="is-visible">WebXR content.</b>
+                        <b>Virtual Reality apps.</b>
+                        <b>Augmented Reality apps.</b>
+                        <b>Machine Learning powered apps.</b>
+                    </span>
+                </h2>
+                <p>This is definitely where you parked your car. And also where the magic happens. <br>
+                    Browse below to view some of my curent projects. <br> These are experimental work in progress build using multiple frameworks. <br>
+                    The pages are regularly updated so expect more to come!</p>
+                <p  class="mb-0">For querys and more information, please contact me at: <a href="mailto:Laurentronn@gmail.com"> Laurentronn@gmail.com</a></p>
 			</div>
+		</div>
+	</div>
+</section>
 
-		<!-- Scripts -->
-        
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
-        
-			<script src="Assets/js/jquery.min.js"></script>
-			<script src="Assets/js/browser.min.js"></script>
-			<script src="Assets/js/breakpoints.min.js"></script>
-			<script src="Assets/js/util.js"></script>
-			<script src="Assets/js/main.js"></script>
+<!-- Banner End -->
 
-	</body>
+<!-- POrtfolio start -->
+<section class="portfolio ">
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+	      	<div class="col-10 text-center">
+		        <div class="btn-group btn-group-toggle " data-toggle="buttons">
+		          <label class="btn active ">
+		            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+		          </label>
+                    <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="VR" />Virtual Reality
+		          </label>
+		          <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="AR" />Augmented Reality
+		          </label>
+		          <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="machineLearning" />Machine Learning
+		          </label>
+		          <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="webXR" />WebXR Design
+		          </label>
+		           <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="unity3D" />Unity 3D
+		          </label>
+		        </div>
+	      	</div>
+    	</div>	
+
+		<div class="row shuffle-wrapper portfolio-gallery">
+	      <div class="col-lg-4 col-12 mb-4 shuffle-item"  data-groups="[&quot;VR&quot;,&quot;webXR&quot;]">
+		      	<div class="position-relative inner-box">
+		          <div class="image position-relative ">
+	               <img src="./images/gif/UnityZombieShooter.gif" alt="portfolio-image" class="img-fluid w-100 d-block">
+	                <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="SuperShooter.html">
+	                      <h5 class="mb-0">SuperShooter</h5>
+	                      <p>Oculus Go VR game - Made with Unity 3D</p>
+	                    </a>
+	                  </div>
+	                </div> 
+	            </div>
+		      </div>
+	      </div>
+
+	      <div class="col-lg-4 col-12 mb-4 shuffle-item" data-groups="[&quot;VR&quot;,&quot;webXR&quot;]">
+	        <div class="position-relative inner-box" >
+	            <div class="image position-relative ">
+	               <img src="./images/gif/middle-earth01.gif" alt="portfolio-image" class="img-fluid w-100 d-block">
+	                <div class="overlay-box">
+	                  <div class="overlay-inner">
+		                    <a class="overlay-content" href="MiddleEarthVR.html">
+		                      <h5 class="mb-0">Middle-Earth.VR</h5>
+		                      <p>WEBXR - Made with Aframe</p>
+		                    </a>
+	                	</div> 
+		            </div>
+		        </div>
+		      </div>
+	      </div>
+
+	      <div class="col-lg-4 col-12 mb-4 shuffle-item" data-groups="[&quot;VR&quot;,&quot;webXR&quot;]">
+	        <div class="position-relative inner-box">
+	            <div class="image position-relative ">
+	               <img src="./images/gif/StarWars03.gif" alt="portfolio-image" class="img-fluid w-100 d-block">
+	                <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="StarWarsVR.html">
+	                      <h5 class="mb-0">StarWars.VR</h5>
+	                      <p>WEBXR - Made with Aframe</p>
+	                    </a>
+	                  </div>
+	                </div> 
+	            </div>
+	        </div>
+	      </div>
+
+	      <div class="col-lg-4 col-12 mb-4 shuffle-item" data-groups="[&quot;unity3D&quot;,&quot;VR&quot;]">
+	        <div class="position-relative inner-box">
+	            <div class="image position-relative ">
+	               <img src="./images/gif/UnityShaders01.gif" alt="portfolio-image" class="img-fluid w-100 d-block">
+	                <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="UnityExperiments.html">
+	                      <h5 class="mb-0">Unity Experiments</h5>
+	                      <p>VR experiment - Made with Unity 3D</p>
+	                    </a>
+	                  </div>
+	                </div> 
+	            </div>
+	        </div>
+	      </div>
+
+	      <div class="col-lg-4 col-12 mb-4 shuffle-item" data-groups="[&quot;unity3D&quot;,&quot;VR&quot;]">
+	        <div class="position-relative inner-box">
+	            <div class="image position-relative ">
+	               <img src="./images/gif/SuperFly07.gif" alt="portfolio-image" class="img-fluid w-100 d-block">
+	                <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="SuperFly.html">
+	                       <h5 class="mb-0 ">SuperFly</h5>
+	                      	<p>Oculus Go VR game - Made with Unity 3D</p>
+	                    </a>
+	                  </div>
+	                </div> 
+	            </div>
+	        </div>
+	      </div>
+
+	      <div class="col-lg-4 col-12 mb-4 shuffle-item" data-groups="[&quot;unity3D&quot;,&quot;VR&quot;]">
+	        <div class="position-relative inner-box">
+	            <div class="image position-relative ">
+	               <img src="./images/gif/UnityiTweenLocomotion.gif" alt="portfolio-image" class="img-fluid w-100 d-block">
+	                <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="UnityExperiments.html">
+	                       <h5 class="mb-0">Unity Prototypes</h5>
+	                      	<p>VR experiment - Made with Unity 3D</p>
+	                    </a>
+	                  </div>
+	                </div> 
+	            </div>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+</section>
+<!-- Portfolio End -->
+
+
+<!-- Footer start -->
+<section class="footer" style="background-color: #ffffff">
+	<div class="container">
+		<div class="row ">
+			<div class="col-lg-9">
+				<p class="mb-0">Copyrights © 2020. Designed by<a href="mailto:Laurentronn@gmail.com"> Laurent Rönn</a></p>
+                <p class="mb-0">All trademarks belong to their respective owners.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Footer End -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="plugins/animated-text/animated-text.js"></script>
+<script src="plugins/counto/apear.js"></script>
+<script src="plugins/counto/counTo.js"></script>
+
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
 </html>
