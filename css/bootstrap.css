@@ -6,7 +6,12 @@
  */
 
  @font-face {
-    font-family: 'Ringbearer';
+    font-family: 'LOTRTitle';
+    src: url('RINGM___.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ringbearer';
     src: url('anirb___.ttf') format('truetype');
 }
 
